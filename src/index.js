@@ -1,3 +1,5 @@
+import "./styles/index.scss"
+
 const recipe = {
   eggs: 3,
   chocolate: 100,
