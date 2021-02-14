@@ -1,5 +1,7 @@
 import "../styles/index.scss"
 import Recipes from "./Recipes"
+import icon from "../images/fooddome.png"
+import iconSvg from "../images/spoon.svg"
 
 const App = () => {
   return (
@@ -9,8 +11,10 @@ const App = () => {
         <section>
           <h1>Hello World, it' my React app from scratch</h1>
         </section>
-      </main> 
+        <img src={icon} alt="icon" width="250"/>
+        <img src={iconSvg} alt="icon svg" width="250"/>
       <Recipes />
+      </main> 
     </>
   )
 }
