@@ -1,20 +1,21 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navigation from './Navigation';
+import About from './About';
+import Home from './Home';
+import Topics from './Topics';
+import Page404 from './Page404';
 import 'Src/assets/styles/global.css';
-import icon from 'Src/assets/images/fooddome.png';
-import iconSvg from 'Src/assets/images/spoon.svg';
-import Recipes from './Recipes';
 
 const App = () => (
-  <>
-    <section className="hero" />
-    <main>
-      <section>
-        <h1>Hello World, it's my React app from scratch</h1>
-      </section>
-      <img src={icon} alt="icon" width="250" />
-      <img src={iconSvg} alt="icon svg" width="250" />
-      <Recipes />
-    </main>
-  </>
+  <Router>
+    <Navigation />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route path="/topics" component={Topics} />
+      <Route path="/about" component={About} />
+      <Route path="*" component={Page404} />
+    </Switch>
+  </Router>
 );
 
 export default App;
