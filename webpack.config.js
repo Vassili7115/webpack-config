@@ -31,7 +31,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'dist'), // output path is required for `clean-webpack-plugin`
-    filename: ' bundle.js',
+    filename: 'bundle.js',
     assetModuleFilename: 'images/[hash][ext][query]', // this places all images processed in an image folder
   },
 
