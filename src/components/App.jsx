@@ -13,7 +13,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/topics" component={Topics} />
       <Route path="/about" component={About} />
-      <Route path="*" component={Page404} />
+      <Route path="/" component={Page404} />
     </Switch>
   </Router>
 );

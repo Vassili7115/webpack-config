@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {
-  console.log('TEST');
   return (
     <nav>
       <ul>
